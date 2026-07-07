@@ -41,17 +41,6 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         }
         notchController.show()
 
-        if CommandLine.arguments.contains("--demo-expand") {
-            featureStore.stocksEnabled = true
-            featureStore.sportsEnabled = true
-            featureStore.musicEnabled = true
-            featureStore.weatherEnabled = true
-            featureStore.newsEnabled = true
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
-                self?.notchController.setExpanded(true, animated: true)
-            }
-        }
-
         gestureMonitor.notchController = notchController
         requestAccessibilityIfNeeded()
         gestureMonitor.start()
