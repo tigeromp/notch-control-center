@@ -9,14 +9,9 @@ Native **macOS** app · **Swift + SwiftUI** · Menu bar utility · **MIT license
 [![Swift](https://img.shields.io/badge/Swift-5.9-F05138?style=flat-square&logo=swift&logoColor=white)](https://github.com/tigeromp/notch-control-center)
 [![License MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
-> **Demo GIF:** Run `bash scripts/capture-demo.sh` locally, then commit `docs/screenshots/demo.gif`.
-> <!-- Replace this block after recording:
-> ![Demo](docs/screenshots/demo.gif)
-> -->
+![Demo](docs/screenshots/demo.gif)
 
 **Music · Live stocks · Live sports · Weather · News · Calendar · Timer · Crypto**
-
-> Record a demo GIF: `bash scripts/capture-demo.sh` — then add `![Demo](docs/screenshots/demo.gif)` here.
 
 ---
 
