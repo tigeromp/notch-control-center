@@ -71,4 +71,3 @@ fi
 
 echo ""
 echo "Release ready: $ZIP_PATH"
-echo "Publish to GitHub: bash scripts/publish-github.sh $VERSION"

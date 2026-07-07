@@ -20,6 +20,7 @@ pkill -x NotchControlCenter 2>/dev/null || true
 sleep 0.5
 
 echo "==> Launching with demo panel expanded..."
+osascript -e 'tell application "System Events" to set visible of process "Cursor" to false' 2>/dev/null || true
 open -n "$APP" --args --demo-expand
 sleep 6
 osascript -e 'tell application "System Events" to set frontmost of process "NotchControlCenter" to true' 2>/dev/null || true
