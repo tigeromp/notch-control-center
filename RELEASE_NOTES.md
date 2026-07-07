@@ -38,7 +38,7 @@ First public release — a native macOS notch control panel built with Swift and
 ## Build from source
 
 ```bash
-git clone https://github.com/ompopat09/notch-control-center.git
+git clone https://github.com/tigeromp/notch-control-center.git
 cd notch-control-center
 bash scripts/run.sh
 ```
