@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Debug",
+            "type": "shell",
+            "command": "swift build",
+            "group": "build",
+            "problemMatcher": "$swiftc"
+        },
+        {
+            "label": "Build App Bundle",
+            "type": "shell",
+            "command": "bash scripts/build-app.sh",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$swiftc"
+        },
+        {
+            "label": "Run App",
+            "type": "shell",
+            "command": "bash scripts/build-app.sh && open \"dist/Notch Control Center.app\"",
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "swift.path": "/usr/bin/swift",
+    "files.exclude": {
+        "**/.build": true
+    },
+    "search.exclude": {
+        "**/.build": true
+    }
+}
