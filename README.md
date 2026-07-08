@@ -9,7 +9,7 @@ Native **macOS** app · **Swift + SwiftUI** · Menu bar utility · **MIT license
 [![Swift](https://img.shields.io/badge/Swift-5.9-F05138?style=flat-square&logo=swift&logoColor=white)](https://github.com/tigeromp/notch-control-center)
 [![License MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
-![Demo](docs/screenshots/demo.gif)
+![Demo](https://github.com/tigeromp/notch-control-center/raw/main/docs/screenshots/notch-demo.gif)
 
 **Music · Live stocks · Live sports · Weather · News · Calendar · Timer · Crypto**
 
