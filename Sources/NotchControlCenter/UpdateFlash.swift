@@ -24,7 +24,7 @@ struct UpdateFlashPulse: View {
             .opacity(opacity)
             .allowsHitTesting(false)
             .onAppear { runPulse() }
-            .onChange(of: trigger) { _, _ in runPulse() }
+            .onChange(of: trigger) { _ in runPulse() }
     }
 
     private func runPulse() {

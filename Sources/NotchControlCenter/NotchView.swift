@@ -239,19 +239,19 @@ struct NotchView: View {
                 Divider().opacity(0.2)
 
                 FeatureToggleRow(icon: "music.note", title: "Music", subtitle: "Now playing controls", isOn: $features.musicEnabled)
-                    .onChange(of: features.musicEnabled) { _, _ in features.onLayoutChange?() }
+                    .onChange(of: features.musicEnabled) { _ in features.onLayoutChange?() }
 
                 FeatureToggleRow(icon: "timer", title: "Timer & Stopwatch", subtitle: "Quick timers", isOn: $features.timerEnabled)
-                    .onChange(of: features.timerEnabled) { _, _ in features.onLayoutChange?() }
+                    .onChange(of: features.timerEnabled) { _ in features.onLayoutChange?() }
 
                 FeatureToggleRow(icon: "video.fill", title: "Meeting Mode", subtitle: "Next meeting + Join", isOn: $features.meetingModeEnabled)
-                    .onChange(of: features.meetingModeEnabled) { _, newValue in
+                    .onChange(of: features.meetingModeEnabled) { newValue in
                         if newValue { calendar.refresh() }
                         features.onLayoutChange?()
                     }
 
                 FeatureToggleRow(icon: "chart.line.uptrend.xyaxis", title: "Stock Ticker", subtitle: "Watchlist banner", isOn: $features.stocksEnabled)
-                    .onChange(of: features.stocksEnabled) { _, newValue in
+                    .onChange(of: features.stocksEnabled) { newValue in
                         if newValue { stocks.refresh() }
                         features.onLayoutChange?()
                     }
@@ -264,7 +264,7 @@ struct NotchView: View {
                 }
 
                 FeatureToggleRow(icon: "bitcoinsign.circle", title: "Crypto", subtitle: "BTC, ETH prices", isOn: $features.cryptoEnabled)
-                    .onChange(of: features.cryptoEnabled) { _, newValue in
+                    .onChange(of: features.cryptoEnabled) { newValue in
                         if newValue { crypto.refresh() }
                         features.onLayoutChange?()
                     }
@@ -277,7 +277,7 @@ struct NotchView: View {
                 }
 
                 FeatureToggleRow(icon: "sportscourt", title: "Sports Scores", subtitle: "Live game scores", isOn: $features.sportsEnabled)
-                    .onChange(of: features.sportsEnabled) { _, newValue in
+                    .onChange(of: features.sportsEnabled) { newValue in
                         if newValue { sports.refresh() }
                         features.onLayoutChange?()
                     }
@@ -287,19 +287,19 @@ struct NotchView: View {
                 }
 
                 FeatureToggleRow(icon: "newspaper", title: "News", subtitle: news.regionSubtitle, isOn: $features.newsEnabled)
-                    .onChange(of: features.newsEnabled) { _, newValue in
+                    .onChange(of: features.newsEnabled) { newValue in
                         if newValue { news.refresh() }
                         features.onLayoutChange?()
                     }
 
                 FeatureToggleRow(icon: "calendar", title: "Calendar", subtitle: "Today's events", isOn: $features.calendarEnabled)
-                    .onChange(of: features.calendarEnabled) { _, newValue in
+                    .onChange(of: features.calendarEnabled) { newValue in
                         if newValue { calendar.refresh() }
                         features.onLayoutChange?()
                     }
 
                 FeatureToggleRow(icon: "cloud.sun.fill", title: "Weather", subtitle: "Current conditions", isOn: $features.weatherEnabled)
-                    .onChange(of: features.weatherEnabled) { _, newValue in
+                    .onChange(of: features.weatherEnabled) { newValue in
                         if newValue { weather.refresh() }
                         features.onLayoutChange?()
                     }

@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "NotchControlCenter",
-    platforms: [.macOS(.v14)],
+    platforms: [.macOS(.v13)],
     products: [
         .executable(name: "NotchControlCenter", targets: ["NotchControlCenter"])
     ],

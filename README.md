@@ -4,8 +4,8 @@
 
 Native **macOS** app · **Swift + SwiftUI** · Menu bar utility · **MIT licensed**
 
-[![Download](https://img.shields.io/badge/Download-v1.0.0-blue?style=for-the-badge)](https://github.com/tigeromp/notch-control-center/releases/latest)
-[![macOS 14+](https://img.shields.io/badge/macOS-14%2B-000000?style=flat-square&logo=apple)](https://github.com/tigeromp/notch-control-center)
+[![Download](https://img.shields.io/badge/Download-v1.0.1-blue?style=for-the-badge)](https://github.com/tigeromp/notch-control-center/releases/latest)
+[![macOS 13+](https://img.shields.io/badge/macOS-13%2B-000000?style=flat-square&logo=apple)](https://github.com/tigeromp/notch-control-center)
 [![Swift](https://img.shields.io/badge/Swift-5.9-F05138?style=flat-square&logo=swift&logoColor=white)](https://github.com/tigeromp/notch-control-center)
 [![License MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
@@ -48,8 +48,8 @@ Look for the **music-note icon** in your menu bar.
 
 ## Requirements
 
-- macOS **14 Sonoma** or later
-- MacBook with notch recommended
+- macOS **13 Ventura** or later (including **14 Sonoma**, **15 Sequoia**, and newer)
+- MacBook with notch recommended (works on other Macs — panel sits top-center)
 
 ## Build release
 

@@ -15,8 +15,8 @@ struct SettingsView: View {
                 .tabItem { Label("Appearance", systemImage: "paintpalette") }
         }
         .frame(width: 480, height: 560)
-        .onChange(of: featureStore.musicEnabled) { _, _ in notchController.refreshLayout() }
-        .onChange(of: featureStore.stocksEnabled) { _, _ in notchController.refreshLayout() }
+        .onChange(of: featureStore.musicEnabled) { _ in notchController.refreshLayout() }
+        .onChange(of: featureStore.stocksEnabled) { _ in notchController.refreshLayout() }
     }
 
     private var generalTab: some View {

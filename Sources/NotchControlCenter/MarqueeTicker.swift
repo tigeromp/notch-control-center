@@ -37,7 +37,7 @@ struct MarqueeTicker<Content: View>: View {
                 .gesture(dragGesture)
                 .onReceive(tick) { _ in advanceFrame() }
                 .onAppear { syncSignature(reset: true) }
-                .onChange(of: contentSignature) { _, _ in syncSignature(reset: false) }
+                .onChange(of: contentSignature) { _ in syncSignature(reset: false) }
             }
         }
         .clipped()
@@ -50,7 +50,7 @@ struct MarqueeTicker<Content: View>: View {
                 GeometryReader { proxy in
                     Color.clear
                         .onAppear { updateTrackWidth(proxy.size.width) }
-                        .onChange(of: proxy.size.width) { _, width in
+                        .onChange(of: proxy.size.width) { width in
                             updateTrackWidth(width)
                         }
                 }
